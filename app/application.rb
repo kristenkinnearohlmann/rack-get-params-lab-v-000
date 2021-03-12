@@ -42,7 +42,7 @@ class Application
     # if @@cart.include?(add_item)
       # return "added #{add_item}"
     # else
-      return "We don't have that item"
+      return "We don't have that item #{add_item}"
     # end
   end
 end
