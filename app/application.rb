@@ -21,7 +21,7 @@ class Application
         @@cart.each {|item| resp.write "#{item}\n"}
       end
     elsif req.path.match(/add/)
-      binding.pry
+
       add_item = req.params["item"]
       resp.write handle_add(add_item)
     else
