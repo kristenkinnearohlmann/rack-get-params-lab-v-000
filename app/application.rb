@@ -39,10 +39,11 @@ class Application
   end
 
   def handle_add(add_item)
-    # if @@cart.include?(add_item)
-      # return "added #{add_item}"
-    # else
-      return "We don't have that item #{@@cart.include?(add_item)}"
-    # end
+    if !@@cart.include?(add_item)
+      @@cart << add_item
+      return "added #{add_item}"
+    else
+      return "We don't have that item"
+    end
   end
 end
